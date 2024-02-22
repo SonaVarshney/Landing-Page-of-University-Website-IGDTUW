@@ -1,0 +1,497 @@
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+
+}
+
+nav {
+    background-color: #011c38;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-bar{
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.search{
+  postion: absolute; 
+}
+
+.search-box {
+  width: 350px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.search-input {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 10px 45px 10px 10px;
+  background-color: #eaeaeb;
+  color: #6c6c6c;
+  border-radius: 6px;
+  border:none;
+  transition: all .4s;
+}
+
+.search-input:focus {
+  border:none;
+  outline:none;
+  box-shadow: 0 1px 12px #b8c6db;
+  -moz-box-shadow: 0 1px 12px #b8c6db;
+  -webkit-box-shadow: 0 1px 12px #b8c6db;
+}
+
+/* .search-btn {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 6px 9px;
+  margin-left:-45px;
+  border:none;
+  color: #6c6c6c;
+  transition: all .4s;
+  z-index: 10;
+} */
+
+/* .search-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: black;
+}
+
+.search-btn:focus {
+  outline:none;
+  color:black;
+}
+ */
+/* header {
+    background-image: url('images/college_img.jpg'); /* Add your header background image */
+    /* background-size: cover;
+    color: #6969ce;
+    text-align: center;
+    padding: 100px 0;
+    height: fit-content; 
+
+} */
+
+
+
+
+/* .header-content {
+    max-width: 800px;
+    margin: auto;
+  color: white; 
+}  */
+
+.container > img{
+  float: right; 
+  margin-right: 300px; 
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* .carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+} */
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* max-height:800px; */
+    /* margin-top:50px; */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; 
+}
+
+.carousel-slide {
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.prev,.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s linear;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="email"], input[type="text"], textarea {
+
+  background-color : #f0f0f1; 
+}
+
+.cards{
+  display: flex; 
+  flex-direction: row; 
+  margin: 15px; 
+  gap: 10px; 
+  justify-content: space-evenly; 
+}
+
+.card-container{
+  padding: 25px; 
+  display: flex; 
+  flex-direction: column; 
+  box-shadow: 10px 10px 5px #f0f0f1; 
+  z-index: 40; 
+  max-width: 400px; 
+  border-radius: 15px;
+  align-content: center; 
+  opacity: 0.8; 
+  color: #4c4848; 
+}
+
+.card-container:hover{
+  opacity: 1; 
+  color: black; 
+}
+
+.card-container p{
+  text-align: justify; 
+  text-justify: inter-word; 
+}
+
+.card-container li{
+  text-align: justify; 
+  text-justify: inter-word; 
+}
+
+.mission{
+  background-color: #FFF5EE;
+}
+
+.vision{
+  background-color: #FFF0F5; 
+}
+
+.vision-mission{
+  margin-top: 50px; 
+}
+
+
+/*  Student life */
+#studentLife h2{
+  margin-left: 100px;
+}
+
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-left: 100px;
+  margin-right: 100px; 
+} */
+
+/* Create two equal columns that sits next to each other */
+/* .column {
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+} */
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.column {
+  flex: 25%;
+  padding: 0 4px;
+  overflow: hidden; 
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  transition: transform 0.3s; /
+}
+
+.column img:hover {
+  transform: scale(1.2); 
+}
+
+
+
+
+
+#about > h2{
+  margin-left: 100px; 
+}
+
+.social-media{
+  display: flex; 
+  gap: 10px; 
+  padding: 20px; 
+}
+
+.social-media i{
+  color: white;  
+}
+
+footer{
+  background-color: #011c38;
+  display: flex; 
+  justify-content: space-evenly; 
+  color: white; 
+  padding: 50px; 
+}
+
+footer ul{
+  list-style-type: none; 
+  opacity: 0.7; 
+}
+
+footer li{
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+footer ul:hover{
+  opacity: 1; 
+}
+
+footer a{
+  text-decoration: none; 
+  color: white; 
+}
+
+footer a:hover{
+  text-decoration: underline; 
+  opacity: 1; 
+}
+
+
+
+/* Contact us card */
+
+/* .contact-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+} */
+
+/* .contact-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-input:focus {
+    outline: none;
+    border: 2px solid #007bff;
+} */
+
+
+.overlay{
+    /* poore screen ko black */
+    width:100%;
+    background: rgba(0,0,0,0.5);
+    /* taaki button aur yeh black black upar se start ho */
+    position:fixed;
+    top:0%;  /*position ke saath use*/
+    height:100vh;
+    /* button ke piche jaaye black */
+    z-index:-1; /*isse piche bhej do taaki button click*/
+    opacity:0;
+    transition: 1s;
+
+}  
+
+.showoverlay{
+    opacity:1;
+    z-index: 1;;
+}
+
+.contact-form{
+    width:350px;
+    background-color: white;
+    padding:30px 20px;
+    position:absolute;
+    left:50%;
+    top:-50%;  /*initially gayab kardiya*/
+    /*whenever position absolute and cenetr mein laana hai use transform translate*/
+     transform:translate(-50%,-50%); /* width,height kyuki 50 percent left dene se uski boundary 50% aag ejayegi and na ki centre */
+    box-shadow: 0px 0px 10px 3px #ccc;
+    transition: 2s;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+
+  
+} 
+
+.show-contact-form{
+    top:50%;
+    z-index: 9;
+}
+.inp-message{
+    width:100%;
+    /* margin-bottom:10px; */
+    height:100px;
+}
+.inp{
+    width:100%;
+    margin-bottom:10px;
+    height:35px;
+}
+
+.contact-button{
+    background-color: black;
+    color:white;
+    padding:10px 15px;
+}
+
+.contact-button:hover{
+  cursor: pointer; 
+  background-color: gray; 
+}
+/*absolute element apni jagah chhodh kar apne parent ke according postion*/
+.contact-form span{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width: 30px;
+    height:30px;
+    background-color:green ;
+    color:white;
+    line-height: 30px; /*jitni height hai utna dedo*/
+    text-align: center;
+    cursor:pointer
+}   
+
+
+
+.heading{
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size:40px;
+  text-align:center;
+  margin-right:20px;
+  margin-bottom:10px;
+}
+
+
+.logo{
+  padding: 12px;
+}
